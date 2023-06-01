@@ -1,0 +1,96 @@
+:root {
+  --Main_Text_Color: cyan;
+  --Font_Weight: bold;
+  --Font_Size_a: 16;
+}
+
+body{
+    background: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  .mySlides {
+    display: none;
+  }
+  img {
+    vertical-align: middle;
+  }
+}
+
+.slideshow-container {
+  max-width: 1850px;
+  max-height: 700px;
+  position: relative;
+  margin: auto;
+}
+
+img{
+    box-shadow: 0px 2px   cyan;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+  text-align: center;
+  height: 100vh;
+  max-width: 100%;
+
+}
+
+.Nav_Bar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: black;
+    color: aqua;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+h1{
+    font-size: 26px;
+    padding-left: 6px;
+}
+
+nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+}
+
+li{
+    flex-grow: 0.2;
+    transition: transform .3s ease-in-out;
+}
+
+a{
+    color: aqua;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+li:hover{
+    transform: scale(1.1);
+    margin-left: 1px;
+}
+
+@keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
